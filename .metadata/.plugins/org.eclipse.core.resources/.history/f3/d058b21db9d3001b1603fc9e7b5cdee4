@@ -1,0 +1,7 @@
+package com.kapilsharma.oops;
+
+public class MotorBike {
+	void start() {
+		System.out.println("Bike has been started");
+	}
+}

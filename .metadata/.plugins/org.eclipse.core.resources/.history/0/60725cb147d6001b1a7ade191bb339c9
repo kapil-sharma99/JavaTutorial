@@ -1,0 +1,19 @@
+package com.kapilsharma.ifstatement.examples;
+
+public class IfStatementRunner {
+	public static void main(String[] args) {
+		puzzle1();
+}
+
+public static void puzzle1() {
+	int k = 25;
+	if(k > 20) {
+		System.out.println(2);
+	} else if(k > 10) {
+		System.out.println(3);
+	} else if(k < 20) {
+		System.out.println(5);
+	} else {
+		System.out.println(5);;
+	}
+}
