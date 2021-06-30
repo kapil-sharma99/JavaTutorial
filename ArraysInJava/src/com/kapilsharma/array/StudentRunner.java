@@ -22,6 +22,12 @@ public class StudentRunner {
 		
 		BigDecimal average = student.getAverageMark();
 		System.out.println("Average of all the marks: " + average);
+		
+		student.addNewMark(91);
+		System.out.println(student);
+		
+		student.removeMarkAtIndex(2);
+		System.out.println(student);
 	}
 
 }
