@@ -8,7 +8,7 @@ public class Student {
 	String name;
 	int[] marks;
 
-	public Student(String name, int[] marks) {
+	public Student(String name, int... marks) { //...allows to have variable no. of arguments and it must always be the last argumnet.
 		this.name = name;
 		this.marks = marks;
 	}
