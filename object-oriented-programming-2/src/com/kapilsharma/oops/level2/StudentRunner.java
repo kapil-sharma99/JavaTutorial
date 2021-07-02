@@ -13,11 +13,9 @@ public class StudentRunner {
 		//person1.setPhoneNumber("9078267211");
 		//System.out.println(person1);
 		
-		Employee employee = new Employee();
-		employee.setName("Kapil Sharma");
+		Employee employee = new Employee("Kapil Sharma", "Senior Software Engineer");
 		employee.setEmail("ks2822123@gmail.com");
 		employee.setPhoneNumber("9078267211");
-		employee.setTitle("Senior Software Engineer");
 		employee.setEmployeeGrade("A");
 		employee.setSalary(50000);
 		

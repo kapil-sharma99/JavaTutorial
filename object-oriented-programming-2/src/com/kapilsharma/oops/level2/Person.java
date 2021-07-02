@@ -5,6 +5,11 @@ public class Person {
 	private String email;
 	private String phoneNumber;
 	
+	public Person(String name) {
+		super();
+		this.name = name;
+	}
+	
 	public String getName() {
 		return this.name;
 	}
