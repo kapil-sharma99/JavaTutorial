@@ -2,7 +2,17 @@ package com.kapilSharma.Collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+
+class AscendingStudentComparator implements Comparator<Student> {
+
+	@Override
+	public int compare(Student student1, Student student2) {
+		return Integer.compare(student1.getId(), student2.getId());
+	}
+	
+}
 
 public class StudentCollectionRunner {
 	
@@ -18,6 +28,9 @@ public class StudentCollectionRunner {
 		System.out.println(studentAI);
 		
 		Collections.sort(studentAI);
-		System.out.println(studentAI);
+		System.out.println("Descending Order Comparator: " + studentAI);
+		
+		Collections.sort(studentAI, new AscendingStudentComparator());
+		System.out.println("Ascending Order Comparator: " + studentAI);
 	}
 }
