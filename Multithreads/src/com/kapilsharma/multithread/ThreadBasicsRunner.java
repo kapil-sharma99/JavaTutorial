@@ -25,7 +25,7 @@ class Task2 implements Runnable {
 
 public class ThreadBasicsRunner {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException{
 		//Task1
 		Task1 task1 = new Task1();
 		task1.setPriority(10);
@@ -35,6 +35,9 @@ public class ThreadBasicsRunner {
 		Task2 task2 = new Task2();
 		Thread task2Thread = new Thread(task2);
 		task2Thread.start();
+		
+		//wait for task1 to completed
+		task1.join();
 		
 		//Task3
 		for(int i = 301; i <= 399; i++) {
