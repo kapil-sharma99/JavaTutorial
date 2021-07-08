@@ -10,8 +10,9 @@ public class FPNumberRunner {
 		
 		 FPSum(numbers);
 		 
-		 numbers.stream().sorted().forEach(e->System.out.println(e)); //sorting using fp
-		 numbers.stream().distinct().forEach(e->System.out.println(e));
+		 numbers.stream().sorted().forEach(e->System.out.println(e)); //sorting using fp;
+		 numbers.stream().distinct().forEach(e->System.out.println(e)); //return distinct value;
+		 numbers.stream().distinct().map(e -> e*e).forEach(e->System.out.println(e));
 		
 		int sum = normalSum(numbers);
 		System.out.println(sum);
