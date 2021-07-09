@@ -9,15 +9,22 @@ class Amount {
 		this.amount = amount;
 	}
 	
-	public void add(Amount other) throws Exception{
+	public void add(Amount other) throws CurrenciesDoNotMatchException{
 		if(!this.currency.equals(other.currency)) {
-			throw new Exception("Currencies dont matched");
+			//throw new Exception("Currencies dont matched");
+			throw new CurrenciesDoNotMatchException("Currencies dont matched");
 		}
 		this.amount = this.amount + other.amount;
 	}
 	
 	public String toString() {
 		return amount + " " + currency;
+	}
+}
+
+class CurrenciesDoNotMatchException extends Exception {
+	public CurrenciesDoNotMatchException(String msg) {
+		super(msg);
 	}
 }
 
