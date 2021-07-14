@@ -4,10 +4,10 @@ public class ConcurrencyRunner {
 
 	public static void main(String[] args) {
 		Counter counter = new Counter();
-		counter.increment();
-		counter.increment();
-		counter.increment();
-		counter.increment();
+		counter.incrementI();
+		counter.incrementI();
+		counter.incrementI();
+		counter.incrementI();
 		System.out.println(counter.getI());
 	}
 
