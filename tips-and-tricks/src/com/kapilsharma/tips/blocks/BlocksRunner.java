@@ -1,11 +1,13 @@
 package com.kapilsharma.tips.blocks;
 
 public class BlocksRunner {
+	
+	public static final int SECONDS_IN_MINUTE = 60;
+	public static final int MINUTES_IN_HOURS = 60;
+	public static final int HOURS_IN_DAY = 24;
+	public static final int SECONDS_IN_DAY = SECONDS_IN_MINUTE * MINUTES_IN_HOURS * HOURS_IN_DAY;
 
 	public static void main(String[] args) {
-		if(3>2) {
-			System.out.println("3>2");
-		} //anything inside there brackets are block
+		System.out.println(SECONDS_IN_DAY);
 	}
-
 }
