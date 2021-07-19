@@ -1,4 +1,4 @@
-package com.kapilsharma.tips.access.package1;
+package com.kapilsharma.tips.nonaccess.package1;
 
 final class FinalClass {}; //final class cannot be extended further
 
