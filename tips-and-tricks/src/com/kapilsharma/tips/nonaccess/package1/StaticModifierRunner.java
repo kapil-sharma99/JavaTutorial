@@ -8,9 +8,17 @@ class Player {
 		super();
 		this.name = name;
 		count++;
+	}	
+
+	public String getName() { //This is an instace method, means can only be called by an instance(Object).
+		return name; //In instance method we can use static variable.
 	}
 
-	static public int getCount() {
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	static public int getCount() { //Inside static method we cannot use any nonstatic variable.
 		return count;
 	}
 }
