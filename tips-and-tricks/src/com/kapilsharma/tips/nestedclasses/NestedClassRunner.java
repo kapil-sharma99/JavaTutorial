@@ -5,7 +5,9 @@ class Person {};
 public class NestedClassRunner {
 	
 	class InnerClass {
-		
+		public InnerClass() {
+			System.out.println("Inner Class");
+		}
 	}
 	
 	static class StaticNestedClass {
