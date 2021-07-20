@@ -17,8 +17,7 @@ public class NestedClassRunner {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		StaticNestedClass staticNestedClass = new StaticNestedClass();
 	}
 
 }
