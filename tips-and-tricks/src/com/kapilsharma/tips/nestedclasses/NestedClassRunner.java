@@ -18,6 +18,7 @@ public class NestedClassRunner {
 
 	public static void main(String[] args) {
 		StaticNestedClass staticNestedClass = new StaticNestedClass();
+		InnerClass innerClass = new InnerClass();
 	}
 
 }
