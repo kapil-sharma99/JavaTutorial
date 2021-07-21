@@ -3,7 +3,13 @@ package com.kapilsharma.tips.enums;
 import java.util.Arrays;
 
 enum Season {
-	WINTER, SUMMER, SPRING, FALL;
+	WINTER(0), SUMMER(1), SPRING(2), FALL(3);
+	
+	private int value;
+	
+	private Season(int value) {
+		this.value = value;
+	}
 }
 
 public class EnumRunner {
