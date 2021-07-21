@@ -10,6 +10,10 @@ enum Season {
 	private Season(int value) {
 		this.value = value;
 	}
+
+	public int getValue() {
+		return value;
+	}
 }
 
 public class EnumRunner {
@@ -19,7 +23,8 @@ public class EnumRunner {
 		
 		Season season1 = Season.valueOf("WINTER");
 		System.out.println(season1);
-		System.out.println(season1.ordinal());
+		System.out.println(season1.ordinal()); //NORMAL METHOD
+		System.out.println(season1.getValue()); //USER CREATED METHOD
 		System.out.println(Arrays.toString(Season.values()));
 	}
 
