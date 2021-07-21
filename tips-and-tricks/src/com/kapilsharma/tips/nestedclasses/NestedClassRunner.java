@@ -19,7 +19,10 @@ public class NestedClassRunner {
 	}
 
 	public static void main(String[] args) {
-		StaticNestedClass staticNestedClass = new StaticNestedClass();
+		StaticNestedClass staticNestedClass = new StaticNestedClass(); //StaticNestedClass can be created without the instance of enclosing class
+		
+		NestedClassRunner nestedClassRunner = new NestedClassRunner();
+		InnerClass innerClass = nestedClassRunner.new InnerClass(); //Inner Class cannot be created without the instance of enclosing class
 	}
 
 }
