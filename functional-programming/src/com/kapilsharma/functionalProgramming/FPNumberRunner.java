@@ -25,11 +25,11 @@ public class FPNumberRunner {
 	
 
 	private static int normalSum(List<Integer> numbers) {
-		int sum = 0;
+		int res = 0;
 		for(int number:numbers) {
-			sum += number;
+			res += number;
 		}
-		return sum;
+		return res;
 	}
 
 }
