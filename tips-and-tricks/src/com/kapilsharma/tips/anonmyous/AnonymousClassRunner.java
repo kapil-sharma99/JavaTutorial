@@ -17,7 +17,7 @@ class LengthComparator implements Comparator<String> {
 public class AnonymousClassRunner {
 
 	public static void main(String[] args) {
-		List<String> animals = new ArrayList<String>(List.of("Ant", "Cat", "Ball", "Elephant"));
+		List<String> animals = new ArrayList<String>(List.of("Ant", "Cat", "Ball", "Elephant", "Dragon"));
 		//Collections.sort(animals, LengthComparator()); [This method can also be used whhich requires another new class]
 		Collections.sort(animals, new Comparator<String>() { //Anonymous class: Doesnot have any name.
 			@Override
